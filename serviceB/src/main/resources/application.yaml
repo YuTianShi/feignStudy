@@ -1,0 +1,12 @@
+server:
+  port: 8001
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+logging:
+  level:
+    root: info
