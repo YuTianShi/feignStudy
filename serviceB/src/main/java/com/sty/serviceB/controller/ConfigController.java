@@ -27,7 +27,6 @@ public class ConfigController {
     @Resource
     private ServiceAClient serviceAClient;
 
-
     private final RestTemplate restTemplate;
     @Autowired
     public ConfigController(RestTemplate restTemplate) {this.restTemplate = restTemplate;}
@@ -41,7 +40,7 @@ public class ConfigController {
 
     @RequestMapping("/getMsg")
     public String getMsg() {
-        return restTemplate.getForObject("http://serviceA/getMsg?msg=" + "123", String.class);
+        return this.serviceAClient.getMsg("12345");
     }
 
 }

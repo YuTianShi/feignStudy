@@ -7,6 +7,3 @@ spring:
         server-addr: 42.192.1.184:8848
       discovery:
         server-addr: 42.192.1.184:8848
-    loadbalancer:
-      ribbon:
-        enabled: false
